@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "55f2fea9-91b6-4c99-9425-909e27b6cf6d",
+		"name": "Golang Upload Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload a file",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get a file by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get all files",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
