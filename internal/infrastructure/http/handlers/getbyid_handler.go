@@ -27,7 +27,7 @@ func NewGetByIdHandler(guc usecases.GetByIdUseCase) http.HandlerFunc {
 
 		if err != nil {
 			w.WriteHeader(http.StatusNotFound)
-			json.NewEncoder(w).Encode(responses.JsonResponse{Message: err.Error(), Status: http.StatusBadRequest})
+			json.NewEncoder(w).Encode(responses.JsonResponse{Message: err.Error(), Status: http.StatusNotFound})
 			return
 		}
 
