@@ -2,14 +2,14 @@ package localstorage
 
 import (
 	"fmt"
+	"github.com/estebandem/simple-file-upload-go/internal/application/dtos/requests"
+	"github.com/estebandem/simple-file-upload-go/internal/application/mapper"
+	"github.com/estebandem/simple-file-upload-go/internal/application/repository"
+	"github.com/estebandem/simple-file-upload-go/internal/domain"
 	"github.com/google/uuid"
 	"io"
 	"os"
 	"path/filepath"
-	"simple-file-upload-go/internal/application/dtos/requests"
-	"simple-file-upload-go/internal/application/mapper"
-	"simple-file-upload-go/internal/application/repository"
-	"simple-file-upload-go/internal/domain"
 	"sync"
 	"time"
 )

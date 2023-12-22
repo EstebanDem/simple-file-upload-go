@@ -2,9 +2,9 @@ package handlers
 
 import (
 	"fmt"
+	"github.com/estebandem/simple-file-upload-go/internal/application/dtos/requests"
+	"github.com/estebandem/simple-file-upload-go/internal/application/usecases"
 	"net/http"
-	"simple-file-upload-go/internal/application/dtos/requests"
-	"simple-file-upload-go/internal/application/usecases"
 )
 
 func NewUploadHandler(upc usecases.UploadFileUseCase) http.HandlerFunc {

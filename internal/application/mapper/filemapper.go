@@ -1,10 +1,10 @@
 package mapper
 
 import (
+	"github.com/estebandem/simple-file-upload-go/internal/domain"
 	"github.com/google/uuid"
 	"os"
 	"path/filepath"
-	"simple-file-upload-go/internal/domain"
 	"time"
 )
 

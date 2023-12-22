@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
+	"github.com/estebandem/simple-file-upload-go/internal/application/usecases"
+	"github.com/estebandem/simple-file-upload-go/internal/infrastructure/http/routers"
+	"github.com/estebandem/simple-file-upload-go/internal/infrastructure/localstorage"
 	"log"
 	"net/http"
-	"simple-file-upload-go/internal/application/usecases"
-	"simple-file-upload-go/internal/infrastructure/http/routers"
-	"simple-file-upload-go/internal/infrastructure/localstorage"
 )
 
 const (

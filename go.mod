@@ -1,4 +1,4 @@
-module simple-file-upload-go
+module github.com/estebandem/simple-file-upload-go
 
 go 1.21.5
 

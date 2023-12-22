@@ -1,10 +1,10 @@
 package routers
 
 import (
+	"github.com/estebandem/simple-file-upload-go/internal/application/usecases"
+	"github.com/estebandem/simple-file-upload-go/internal/infrastructure/http/handlers"
 	"github.com/gorilla/mux"
 	"net/http"
-	"simple-file-upload-go/internal/application/usecases"
-	"simple-file-upload-go/internal/infrastructure/http/handlers"
 )
 
 func FileRouter(guc usecases.GetAllFilesUseCase, iuc usecases.GetByIdUseCase, upc usecases.UploadFileUseCase) *mux.Router {

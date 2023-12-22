@@ -1,8 +1,8 @@
 package usecases
 
 import (
+	"github.com/estebandem/simple-file-upload-go/internal/application/repository"
 	"github.com/google/uuid"
-	"simple-file-upload-go/internal/application/repository"
 )
 
 type GetByIdUseCase interface {

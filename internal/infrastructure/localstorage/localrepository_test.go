@@ -2,12 +2,12 @@ package localstorage_test
 
 import (
 	"errors"
+	"github.com/estebandem/simple-file-upload-go/internal/application/dtos/requests"
+	"github.com/estebandem/simple-file-upload-go/internal/application/repository"
+	"github.com/estebandem/simple-file-upload-go/internal/infrastructure/localstorage"
 	"github.com/google/uuid"
 	"os"
 	"path/filepath"
-	"simple-file-upload-go/internal/application/dtos/requests"
-	"simple-file-upload-go/internal/application/repository"
-	"simple-file-upload-go/internal/infrastructure/localstorage"
 	"strings"
 	"testing"
 )

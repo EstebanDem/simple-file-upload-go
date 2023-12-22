@@ -2,9 +2,9 @@ package handlers
 
 import (
 	"encoding/json"
+	"github.com/estebandem/simple-file-upload-go/internal/application/mapper"
+	"github.com/estebandem/simple-file-upload-go/internal/application/usecases"
 	"net/http"
-	"simple-file-upload-go/internal/application/mapper"
-	"simple-file-upload-go/internal/application/usecases"
 )
 
 func NewGetAllHandler(uc usecases.GetAllFilesUseCase) http.HandlerFunc {

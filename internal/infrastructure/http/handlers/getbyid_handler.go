@@ -2,10 +2,10 @@ package handlers
 
 import (
 	"encoding/json"
+	"github.com/estebandem/simple-file-upload-go/internal/application/usecases"
 	"github.com/google/uuid"
 	"github.com/gorilla/mux"
 	"net/http"
-	"simple-file-upload-go/internal/application/usecases"
 )
 
 func NewGetByIdHandler(guc usecases.GetByIdUseCase) http.HandlerFunc {

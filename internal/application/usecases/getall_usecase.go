@@ -1,8 +1,8 @@
 package usecases
 
 import (
-	"simple-file-upload-go/internal/application/repository"
-	"simple-file-upload-go/internal/domain"
+	"github.com/estebandem/simple-file-upload-go/internal/application/repository"
+	"github.com/estebandem/simple-file-upload-go/internal/domain"
 )
 
 type GetAllFilesUseCase interface {
