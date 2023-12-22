@@ -66,7 +66,7 @@ func (l *LocalRepository) Upload(ur *requests.UploadRequest) error {
 	l.files[newId] = &domain.UploadedFile{
 		ID:         newId,
 		Extension:  fileExtension,
-		UploadedAt: time.Time{},
+		UploadedAt: time.Now(),
 	}
 	return nil
 }
