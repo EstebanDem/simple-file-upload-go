@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/estebandem/simple-file-upload-go/internal/application/dtos/requests"
+	"github.com/estebandem/simple-file-upload-go/internal/application/dtos/responses"
 	"github.com/estebandem/simple-file-upload-go/internal/application/usecases"
 	"net/http"
 )
@@ -30,11 +31,8 @@ func NewUploadHandler(upc usecases.UploadFileUseCase) http.HandlerFunc {
 			return
 		}
 
-		json.NewEncoder(w).Encode(jsonResponse{Message: "file uploaded successfully", Status: http.StatusCreated})
+		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(http.StatusCreated)
+		json.NewEncoder(w).Encode(responses.JsonResponse{Message: "file uploaded successfully", Status: http.StatusCreated})
 	}
-}
-
-type jsonResponse struct {
-	Message string `json:"message"`
-	Status  int    `json:"status"`
 }
