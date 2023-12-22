@@ -11,7 +11,6 @@ func NewUploadHandler(upc usecases.UploadFileUseCase) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("Received request with Content-Type:", r.Header.Get("Content-Type"))
 
-		// Parse the form data to get the file
 		file, header, err := r.FormFile("file")
 		if err != nil {
 			http.Error(w, "Error parsing form: "+err.Error(), http.StatusBadRequest)

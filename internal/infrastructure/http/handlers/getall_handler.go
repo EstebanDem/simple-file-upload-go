@@ -29,17 +29,3 @@ func NewGetAllHandler(uc usecases.GetAllFilesUseCase) http.HandlerFunc {
 		json.NewEncoder(w).Encode(filesJson)
 	}
 }
-
-//func NewGetAllHandler(w http.ResponseWriter, r *http.Request) {
-//	directory := "./../uploads"
-//
-//	files, err := os.ReadDir(directory)
-//	if err != nil {
-//		log.Fatal(err)
-//	}
-//
-//	for _, f := range files {
-//		fmt.Println(f.Name())
-//		fmt.Println(filepath.Ext(f.Name()))
-//	}
-//}
